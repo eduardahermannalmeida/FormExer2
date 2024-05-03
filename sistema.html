@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sistema de Gestão Acadêmica </title>
+    <link rel="stylesheet" type="text/css" href="src/css/style.css" media="screen">
+</head>
+
+<body>
+
+    <div>
+
+        <h4 id="titulo"> SISTEMA DE GESTÃO ACADÊMICA </h4>
+        <br>
+
+    </div>
+
+    <div>
+
+        <h3 id="subtitulo"> MANUTENÇÃO DE USUÁRIOS DE SISTEMA INTERNO </h3>
+        <br>
+
+    </div>
+
+    <form>
+
+        <div class="campo">
+
+            <label for="login"> <strong> Login </strong> </label>
+            <input type="text" name="login" id="login" required>
+
+        </div>
+
+
+
+        <div class="campo">
+
+            <label for="email"> <strong> Senha </strong> </label>
+            <input type="password" name="senha" id="senha" required>
+
+        </div>
+
+        <div class="campo">
+
+            <label> <strong> Status </strong> </label>
+            <select id="status">
+                <option selected disable value=""> Selecione </option>
+                <option> Inativo </option>
+                <option> Ativo </option>
+            </select>
+
+        </div>
+
+        <div class="campo">
+
+            <label> <strong> Tipo </strong></label>
+            <labeL>
+                <input type="radio" name="tipo" value="tecnico"> Técnico
+            </labeL>
+            <labeL>
+                <input type="radio" name="tipo" value="professor"> Professor
+            </labeL>
+            <labeL>
+                <input type="radio" name="tipo" value="aluno"> Aluno
+            </labeL>
+
+        </div>
+
+        <div class="campo">
+
+            <label for="datacriacao"> <strong> Data de Criação </strong> </label>
+            <input type="date" name="datacriacao" id="datacriacao" required>
+
+        </div>
+
+        <div>
+
+            <label> <strong> Perfil </strong> </label>
+            <labeL>
+                <input type="radio" name="perfil" value="convidado"> Convidado
+            </labeL>
+            <labeL>
+                <input type="radio" name="perfil" value="admnistrador"> Administrador
+            </labeL>
+
+        </div>
+
+        <div class="campo">
+
+            <br>
+            <label> <strong> Observações </strong> </label>
+            <textarea row="6" style="width: 26em" name="observacao" id="observacao" required></textarea>
+
+        </div>
+
+
+        <div class="campo">
+            <label> <strong> Módulos </strong> </label>
+
+            <input type="checkbox" id="modulo1" value="Compras">
+            <label for="modulo1"> Compras </label>
+
+            <input type="checkbox" id="modulo2" value="Biblioteca">
+            <label for="modulo2"> Biblioteca </label>
+
+            <input type="checkbox" id="modulo3" value="Acadêmico">
+            <label for="modulo3"> Acadêmico </label> 
+
+            <input type="checkbox" id="modulo4" value="Documentação">
+            <label for="modulo4"> Documentação </label> <br>
+
+            &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+
+            <input type="checkbox" id="modulo5" value="Recursos Humanos">
+            <label for="modulo5"> Recursos Humanos </label>
+
+        </div>
+        <br>
+        <br>
+
+        <div id="botoes">
+            <button class="botao1" type="submit"> Cadastrar </button>
+            <button class="botao2" type="reset"> Excluir </button>
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>
